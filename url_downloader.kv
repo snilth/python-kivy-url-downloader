@@ -4,6 +4,8 @@
         Label:
             text: 'URL Downloader'
         TextInput:
+            id: url_input
             hint_text: 'Enter url here...'
         Button:
             text: 'Click to download'
+            on_press: root.download()
