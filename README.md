@@ -9,7 +9,7 @@
 **หน้าตาโปรแกรม :**
 <br />
 
-![image](https://github.com/snilth/python-kivy-url-downloader/assets/172616383/5f4bd01f-6dc5-4d48-9b16-0ff5191ae5a7)
+![after update](https://github.com/snilth/python-kivy-url-downloader/assets/172616383/2ed7c3cf-0015-4b0e-8ea7-51a7c7f40fa7)
 
 
 
