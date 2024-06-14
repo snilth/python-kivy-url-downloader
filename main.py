@@ -20,10 +20,13 @@ from pytube import YouTube
 
 class URL_Downloader(BoxLayout):
     def download(self):
-        url = self.ids.url_input.text
-        yt = YouTube(url)
-        audio_stream = yt.streams.filter(only_audio=True).first()
-        audio_stream.download(output_path='C:\HobbyProjects\python-kivy-url-downloader\Audio_files')
+        try:
+            url = self.ids.url_input.text
+            yt = YouTube(url)
+            audio_stream = yt.streams.filter(only_audio=True).first()
+            audio_stream.download(output_path='C:\HobbyProjects\python-kivy-url-downloader\Audio_files')
+        except Exception as e:
+            print(f"Error : {e}")
 
 class MyApp(App):
     def build(self):

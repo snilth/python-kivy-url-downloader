@@ -3,13 +3,20 @@
         orientation: 'vertical'
         Label:
             text: 'URL Downloader'
+            font_name: 'fonts/Candal-Regular.ttf'
         TextInput:
             id: url_input
             hint_text: 'Enter url here...'
+            font_name: 'fonts/Candal-Regular.ttf'
         Button:
             text: 'Click to download'
             on_press: root.download()
+            size_hint: .4, .2
+            font_name: 'fonts/Candal-Regular.ttf'
         Button:
             id: exit_btn
             text: 'Close'
             on_press: app.stop()
+            size_hint: .4, .2
+            font_name: 'fonts/Candal-Regular.ttf'
+
