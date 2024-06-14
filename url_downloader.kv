@@ -25,8 +25,18 @@
             pos_hint: {'center_x': 0.5}
 
         Button:
-            text: 'Click to download'
-            on_press: root.download()
+            id: download_aud_btn
+            text: 'Download Audio'
+            on_press: root.download_audio()
+            size_hint: .6, None
+            height: 40
+            font_name: 'fonts/Candal-Regular.ttf'
+            pos_hint: {'center_x': 0.5}
+        
+        Button:
+            id: download_vid_btn
+            text: 'Download Video'
+            on_press: root.download_video()
             size_hint: .6, None
             height: 40
             font_name: 'fonts/Candal-Regular.ttf'

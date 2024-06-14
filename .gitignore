@@ -1,3 +1,5 @@
 kivy_venv/
 .env
 Audio_files/
+Video_files/
+imgs/
