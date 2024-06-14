@@ -28,7 +28,7 @@ class URL_Downloader(BoxLayout):
         except Exception as e:
             print(f"Error : {e}")
 
-class MyApp(App):
+class URLDownloaderApp(App):
     def build(self):
         return URL_Downloader()
 
@@ -36,4 +36,4 @@ class MyApp(App):
 
 
 if __name__ == '__main__':
-    MyApp().run()
+    URLDownloaderApp().run()
