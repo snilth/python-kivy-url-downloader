@@ -14,12 +14,9 @@ from kivy.uix.label import Label
 from kivy.uix.textinput import TextInput
 from kivy.uix.button import Button
 
+
 # Library
 from pytube import YouTube
-
-class MyApp(App):
-    def build(self):
-        return URL_Downloader()
 
 class URL_Downloader(BoxLayout):
     def download(self):
@@ -28,6 +25,11 @@ class URL_Downloader(BoxLayout):
         audio_stream = yt.streams.filter(only_audio=True).first()
         audio_stream.download(output_path='C:\HobbyProjects\python-kivy-url-downloader\Audio_files')
 
+class MyApp(App):
+    def build(self):
+        return URL_Downloader()
+
+        
 
 
 if __name__ == '__main__':
