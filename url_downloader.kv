@@ -1,22 +1,42 @@
 <URL_Downloader>:
     BoxLayout:
         orientation: 'vertical'
+
         Label:
-            text: 'URL Downloader'
+            text: 'URL Downloader \n -- only audio --'
             font_name: 'fonts/Candal-Regular.ttf'
+            font_size: 52
+            size_hint: .6, None
+            pos_hint: {'center_x': 0.5}
+            
+        Label:
+            text: 'by Suchada Nilthuean'
+            font_name: 'fonts/Candal-Regular.ttf'
+            font_size: 16
+            size_hint: .6, None
+            pos_hint: {'center_x': 0.5}
+            
         TextInput:
             id: url_input
             hint_text: 'Enter url here...'
             font_name: 'fonts/Candal-Regular.ttf'
+            size_hint: .6, None
+            height: 40
+            pos_hint: {'center_x': 0.5}
+
         Button:
             text: 'Click to download'
             on_press: root.download()
-            size_hint: .4, .2
+            size_hint: .6, None
+            height: 40
             font_name: 'fonts/Candal-Regular.ttf'
+            pos_hint: {'center_x': 0.5}
+
         Button:
             id: exit_btn
             text: 'Close'
             on_press: app.stop()
-            size_hint: .4, .2
+            size_hint: .6, None
+            height: 40
             font_name: 'fonts/Candal-Regular.ttf'
-
+            pos_hint: {'center_x': 0.5}
